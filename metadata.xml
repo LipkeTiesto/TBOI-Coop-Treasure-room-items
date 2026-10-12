@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Назва моду для меню Mods та Steam Workshop -->
+    <name>Co-op Double Treasure Room Items</name>
+
+    <!-- Назва каталогу моду -->
+    <directory>isaacmod</directory>
+
+    <!-- ID у Steam Workshop (порожнє для локальної розробки) -->
+    <id></id>
+
+    <!-- Опис моду -->
+    <description>Мод для The Binding of Isaac: Repentance / Repentance+. Автоматично додає 2 предмети у звичайних кімнатах скарбів, а на альтернативних поверхах створює для обох гравців по власній парі [1 відкритий + 1 прихований ?] для чесного вибору.</description>
+
+    <!-- Версія моду -->
+    <version>1.0</version>
+
+    <!-- Видимість у майстерні -->
+    <visibility>Public</visibility>
+
+    <!-- Теги для категоризації -->
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+    <tag id="Items"/>
+    <tag id="Repentance"/>
+
+    <!-- Сумісність з версіями гри -->
+    <compatibility>Repentance</compatibility>
+</metadata>
