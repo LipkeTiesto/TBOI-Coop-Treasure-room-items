@@ -22,9 +22,6 @@ Mod.Config = {
     -- На скільки пікселів ряд Гравця 1 зсувається вгору, а ряд Гравця 2 - вниз
     -- від початкової позиції предметів (40 = одна клітинка).
     RowOffset = 40,
-
-    -- Спавнити візуальний ефект "диму" (Poof) та звук появи при створенні нових п'єдесталів
-    SpawnPoofEffect = true,
 }
 
 -- ============================================================================
@@ -152,14 +149,8 @@ function Mod:OnNewRoom()
         if i == 1 and makeBlind then
             MakePedestalBlind(copy)
         end
-        if Mod.Config.SpawnPoofEffect then
-            Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.POOF01, 0, copyPos, Vector(0, 0), nil)
-        end
     end
 
-    if Mod.Config.SpawnPoofEffect then
-        SFXManager():Play(SoundEffect.SOUND_SUMMON_POOF, 0.8, 0, false, 1.0)
-    end
     Log(string.format("Кімната скарбів: додано %d предмет(и) для Гравця 2 (вибір: %s, прихований: %s)",
         #items, tostring(isChoice), tostring(makeBlind)))
 end
